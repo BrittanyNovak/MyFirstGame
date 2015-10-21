@@ -22,7 +22,7 @@ public class MainThread extends Thread {
         this.gamePanel = gamePanel;
     }
 
-    private void setRunning(boolean running){
+    public void setRunning(boolean running){
         this.running = running;
     }
 
