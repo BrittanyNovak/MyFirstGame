@@ -10,11 +10,14 @@ public class Background {
     private Bitmap image;
     private int x, y, dx;
 
-    public  Background(Bitmap res) {image = res; }
+    public  Background(Bitmap res) {
+        image = res;
+        dx = GamePanel.MOVESPEED;
+    }
 
     public void update(){
         x += dx;
-        if(x<-GamePanel.WIDTH){
+        if(x >  GamePanel.WIDTH){
             x=0;
         }
     }
